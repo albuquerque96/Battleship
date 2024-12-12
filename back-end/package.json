@@ -1,0 +1,20 @@
+{
+    "name": "my_project",
+    "version": "1.0.0",
+    "description": "Projeto que contém serviços de autenticação e gerenciamento de jogos",
+    "scripts": {
+      "start": "npm run start --workspace=auth_service",
+      "test": "npm run test --workspace=auth_service && npm run test --workspace=game_service"
+    },
+    "dependencies": {
+      "pg": "^8.8.0",
+      "redis": "^4.0.0"
+    },
+    "workspaces": [
+      "auth_service",
+      "game_service"
+    ],
+    "author": "",
+    "license": "ISC"
+  }
+  
